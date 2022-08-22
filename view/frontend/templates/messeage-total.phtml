@@ -1,0 +1,22 @@
+<?php
+
+/** @var \AHT\FreeShippingMesseage\Block\Template $block */
+?>
+
+<div data-bind="scope: 'messeage-subtotal'" id="messeage-subtotal">
+    <!-- ko template: getTemplate() -->
+    <!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+       "*": {
+           "Magento_Ui/js/core/app": {
+               "components": {
+                   "messeage-subtotal": {
+                       "component": "AHT_FreeShippingMesseage/js/view/messeage-subtotal"
+                   }
+               }
+           }
+       }
+   }
+</script>
